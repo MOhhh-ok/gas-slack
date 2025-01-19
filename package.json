@@ -1,0 +1,26 @@
+{
+  "name": "@masa-dev/gas-slack",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "push": "clasp push",
+    "prepublishOnly": "tsc"
+  },
+  "devDependencies": {
+    "@types/google-apps-script": "^1.0.91"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mohhh-ok/gas-slack"
+  },
+  "keywords": [
+    "gas",
+    "slack"
+  ],
+  "license": "MIT"
+}
