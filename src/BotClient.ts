@@ -7,7 +7,7 @@ export class BotClient {
       text, // 送信するメッセージ
     });
 
-    const res = UrlFetchApp.fetch('https://slack.com/api/chat.postMessage', {
+    return UrlFetchApp.fetch('https://slack.com/api/chat.postMessage', {
       method: 'post',
       headers: {
         'Content-Type': 'application/json',
