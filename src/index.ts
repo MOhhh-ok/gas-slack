@@ -7,5 +7,7 @@ function test() {
   const channelId = pro.getProperty('CHANNEL_ID') as string;
   const token = pro.getProperty('BOT_TOKEN') as string;
   const test = new BotClient({ channelId, token });
-  test.sendMessage('test');
+  const res = test.sendMessage('test');
+  console.log(res.getResponseCode());
+  console.log(res.getContentText());
 }
